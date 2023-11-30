@@ -1,0 +1,7 @@
+*
+!.gitignore
+!.gitattributes
+!*.[ch]pp
+!*.[ch]
+!*.py
+!Makefile*
