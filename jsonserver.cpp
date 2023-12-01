@@ -95,10 +95,10 @@ int main()
         printf("%s\n", std::to_string(packet).c_str());
         printf("\n\n");
         fflush(stdout);
-        json j = packet;
         packet.params.clear();
         packet.params.push_back("Hello");
         packet.params.push_back("World");
+        json j = packet;
         zstr_send(which, j.dump().c_str());
     }
     zpoller_destroy(&poller);
